@@ -2,16 +2,10 @@
 
 ## Clonando o repositório
 
-**1.** Dentro do seu terminal e no diretório de sua preferência digite:
+Dentro do seu terminal e no diretório de sua preferência digite:
 
 ```bash
 git clone https://github.com/carlosroltjr/eventos-mobile.git
-```
-
-**2.** Entre no diretório do projeto:
-
-```bash
-cd eventos-mobile
 ```
 
 Feito isso, você está pronto para desenvolver melhorias no projeto!
