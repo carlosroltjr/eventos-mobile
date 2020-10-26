@@ -1,6 +1,16 @@
-# Guia para colaboradores
+# Sistema de Gerenciamento de Eventos
 
-## Clonando o repositório
+O sistema consiste em uma lista de eventos onde você pode, criar, editar e excluir eventos.
+
+## Técnologias usadas
+
+* AndroidStudio
+* Java
+* SQlite
+
+## Guia para colaboradores
+
+### Clonando o repositório
 
 Dentro do seu terminal e no diretório de sua preferência digite:
 
@@ -8,7 +18,7 @@ Dentro do seu terminal e no diretório de sua preferência digite:
 git clone https://github.com/carlosroltjr/eventos-mobile.git
 ```
 
-Feito isso, você está pronto para desenvolver melhorias no projeto!
+Feito isso, basta iniciar o Android Studio e escolher a opção de importar um novo projeto, escolhendo o diretório no qual você clonou o nosso projeto. Com isso você estará pronto para desenvolver melhorias!
 
 ## Comandos úteis
 
