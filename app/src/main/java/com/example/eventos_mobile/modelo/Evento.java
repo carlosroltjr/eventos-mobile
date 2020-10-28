@@ -7,11 +7,8 @@ import java.io.Serializable;
 public class Evento implements Serializable {
 
     private int id;
-
     private String nome;
-
     private String data;
-
     private String local;
 
     public Evento(int id, String nome, String data, String local) {
@@ -56,6 +53,6 @@ public class Evento implements Serializable {
     @NonNull
     @Override
     public String toString() {
-        return nome + " - " + data + " - " + local;
+        return id + " - " + nome + " - " + data + " - " + local;
     }
 }
