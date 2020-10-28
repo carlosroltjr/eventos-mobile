@@ -24,7 +24,7 @@ public class EventosDAO {
 
         contentValues.put(EventosEntity.COLUMN_NAME_NOME, evento.getNome());
         contentValues.put(EventosEntity.COLUMN_NAME_DATA, evento.getData());
-        contentValues.put(EventosEntity.COLUMN_NAME_DATA, evento.getLocal());
+        contentValues.put(EventosEntity.COLUMN_NAME_LOCAL, evento.getLocal());
 
         if (evento.getId() > 0) {
             return databaseGateway.getSqLiteDatabase().update(EventosEntity.TABLE_NAME,
