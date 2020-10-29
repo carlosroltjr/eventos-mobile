@@ -1,9 +1,19 @@
+com/example/eventos_mobile/database/DatabaseGateway.java
+ com.example.eventos_mobile.database.DatabaseGateway
+com/example/eventos_mobile/database/contract/EventosContract.java
+ com.example.eventos_mobile.database.contract.EventosContract
+com/example/eventos_mobile/database/entity/EventosEntity.java
+ com.example.eventos_mobile.database.entity.EventosEntity
 com/example/eventos_mobile/BuildConfig.java
  com.example.eventos_mobile.BuildConfig
-com/example/eventos_mobile/modelo/Evento.java
- com.example.eventos_mobile.modelo.Evento
+com/example/eventos_mobile/database/DatabaseHelper.java
+ com.example.eventos_mobile.database.DatabaseHelper
 com/example/eventos_mobile/CriarEventoActivity.java
  com.example.eventos_mobile.CriarEventoActivity
+com/example/eventos_mobile/modelo/Evento.java
+ com.example.eventos_mobile.modelo.Evento
+com/example/eventos_mobile/database/EventosDAO.java
+ com.example.eventos_mobile.database.EventosDAO
 com/example/eventos_mobile/MainActivity.java
  com.example.eventos_mobile.MainActivity
  com.example.eventos_mobile.MainActivity$1

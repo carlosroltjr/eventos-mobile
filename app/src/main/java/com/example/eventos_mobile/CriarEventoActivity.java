@@ -8,17 +8,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.eventos_mobile.database.EventosDAO;
 import com.example.eventos_mobile.modelo.Evento;
 
-import java.time.LocalDate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CriarEventoActivity extends AppCompatActivity {
 
-    private final int RESULT_CODE_NOVO_PRODUTO = 10;
-    private final int RESULT_CODE_PRODUTO_EDITADO = 11;
-    private boolean edicao = false;
     private int id = 0;
 
     @Override
@@ -45,7 +42,6 @@ public class CriarEventoActivity extends AppCompatActivity {
             editTextData.setText(String.valueOf(evento.getData()));
             editTextLocal.setText(evento.getLocal());
 
-            edicao = true;
             id = evento.getId();
         }
     }
@@ -70,22 +66,20 @@ public class CriarEventoActivity extends AppCompatActivity {
         if (nome.length() < 3) {
             Toast.makeText(CriarEventoActivity.this, "Mínimo de três letras para o nome", Toast.LENGTH_LONG).show();
         } else if (!matcher.find()) {
-            Toast.makeText(CriarEventoActivity.this, "Formato de data aceito 99/99/9999", Toast.LENGTH_LONG).show();
+            Toast.makeText(CriarEventoActivity.this, "Formato de data aceito 12/34/5678", Toast.LENGTH_LONG).show();
         } else if (local.equals("")) {
             Toast.makeText(CriarEventoActivity.this, "Campo Local obrigatório", Toast.LENGTH_LONG).show();
         } else {
             Evento evento = new Evento(id, nome, data, local);
-            Intent intent = new Intent();
+            EventosDAO eventosDAO = new EventosDAO(getBaseContext());
 
-            if (edicao) {
-                intent.putExtra("eventoEditado", evento);
-                setResult(RESULT_CODE_PRODUTO_EDITADO, intent);
+            boolean salvou = eventosDAO.salvar(evento);
+
+            if (salvou) {
+                finish();
             } else {
-                intent.putExtra("novoEvento", evento);
-                setResult(RESULT_CODE_NOVO_PRODUTO, intent);
+                Toast.makeText(CriarEventoActivity.this, "Erro ao salvar", Toast.LENGTH_LONG).show();
             }
-
-            finish();
         }
     }
 }
