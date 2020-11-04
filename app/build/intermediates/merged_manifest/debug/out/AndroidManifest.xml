@@ -19,6 +19,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.Eventosmobile" >
+        <activity android:name="com.example.eventos_mobile.ListarLocalActivity" />
+        <activity android:name="com.example.eventos_mobile.CriarLocalActivity" />
         <activity android:name="com.example.eventos_mobile.CriarEventoActivity" />
         <activity android:name="com.example.eventos_mobile.MainActivity" >
             <intent-filter>

@@ -34,17 +34,15 @@
         android:inputType="date" />
 
     <TextView
-        android:id="@+id/textView_local"
+        android:id="@+id/textView_local_evento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Local do evento" />
+        android:text="Local" />
 
-    <EditText
-        android:id="@+id/editText_local"
+    <Spinner
+        android:id="@+id/spinner_local"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName" />
+        android:layout_height="50dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
