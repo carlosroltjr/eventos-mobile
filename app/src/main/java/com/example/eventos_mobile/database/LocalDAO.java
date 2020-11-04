@@ -59,6 +59,6 @@ public class LocalDAO {
 
     public void excluir(Local local) {
         databaseGateway.getSqLiteDatabase().delete(LocalEntity.TABLE_NAME,
-                LocalEntity._ID + " LIKE ?", new String[]{String.valueOf(local.getId())});
+                LocalEntity._ID + "=?", new String[]{String.valueOf(local.getId())});
     }
 }

@@ -68,6 +68,6 @@ public class EventosDAO {
 
     public void excluir(Evento evento) {
         databaseGateway.getSqLiteDatabase().delete(EventosEntity.TABLE_NAME,
-                EventosEntity._ID + " LIKE ?", new String[]{String.valueOf(evento.getId())});
+                EventosEntity._ID + "=?", new String[]{String.valueOf(evento.getId())});
     }
 }
