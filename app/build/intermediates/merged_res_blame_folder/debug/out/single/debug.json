@@ -24,12 +24,20 @@
         "source": "/home/carlos/AndroidStudioProjects/eventosmobile/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
+        "merged": "/home/carlos/AndroidStudioProjects/eventosmobile/app/build/intermediates/res/merged/debug/layout_activity_criar_local.xml.flat",
+        "source": "/home/carlos/AndroidStudioProjects/eventosmobile/app/src/main/res/layout/activity_criar_local.xml"
+    },
+    {
         "merged": "/home/carlos/AndroidStudioProjects/eventosmobile/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "/home/carlos/AndroidStudioProjects/eventosmobile/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/carlos/AndroidStudioProjects/eventosmobile/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "/home/carlos/AndroidStudioProjects/eventosmobile/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/carlos/AndroidStudioProjects/eventosmobile/app/build/intermediates/res/merged/debug/layout_activity_listar_local.xml.flat",
+        "source": "/home/carlos/AndroidStudioProjects/eventosmobile/app/src/main/res/layout/activity_listar_local.xml"
     },
     {
         "merged": "/home/carlos/AndroidStudioProjects/eventosmobile/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",

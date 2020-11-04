@@ -1,6 +1,8 @@
 package com.example.eventos_mobile.modelo;
 
-public class Local {
+import java.io.Serializable;
+
+public class Local implements Serializable {
 
     private int id;
     private String nome;
@@ -44,5 +46,10 @@ public class Local {
 
     public void setCapacidade(int capacidade) {
         this.capacidade = capacidade;
+    }
+
+    @Override
+    public String toString() {
+        return nome + " - " +  cidade + " - " + capacidade;
     }
 }

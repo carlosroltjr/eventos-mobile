@@ -86,4 +86,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, CriarEventoActivity.class);
         startActivity(intent);
     }
+
+    public void onClickLocais(View v) {
+        Intent intent = new Intent(MainActivity.this, ListarLocalActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

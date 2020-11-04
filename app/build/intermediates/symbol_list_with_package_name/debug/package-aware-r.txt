@@ -1666,9 +1666,14 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btn_eventos
+id btn_locais
 id btn_novoEvento
+id btn_novo_local
 id btn_salvar
+id btn_salvar_local
 id btn_voltar
+id btn_voltar_local
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -1726,9 +1731,11 @@ id dropdown_menu
 id easeIn
 id easeInOut
 id easeOut
+id editTextNumber_capacidade_local
+id editText_cidade_local
 id editText_data
-id editText_local
 id editText_nome
+id editText_nome_local
 id edit_query
 id end
 id enterAlways
@@ -1779,6 +1786,7 @@ id line3
 id linear
 id listMode
 id listView_eventos
+id listView_locais
 id list_item
 id masked
 id message
@@ -1884,6 +1892,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spinner_local
 id spline
 id split_action_bar
 id spread
@@ -1921,9 +1930,12 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView_capacidade_local
+id textView_cidade_local
 id textView_data
-id textView_local
+id textView_local_evento
 id textView_nome
+id textView_nome_local
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2021,6 +2033,8 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_criar_evento
+layout activity_criar_local
+layout activity_listar_local
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item

@@ -12,7 +12,7 @@ import com.example.eventos_mobile.database.contract.LocalContract;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private  static final String DATABASE_NAME = "db.eventos";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 3;
 
     public DatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);

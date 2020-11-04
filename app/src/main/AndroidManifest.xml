@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Eventosmobile">
-        <activity android:name=".CriarEventoActivity"></activity>
+        <activity android:name=".ListarLocalActivity"></activity>
+        <activity android:name=".CriarLocalActivity" />
+        <activity android:name=".CriarEventoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

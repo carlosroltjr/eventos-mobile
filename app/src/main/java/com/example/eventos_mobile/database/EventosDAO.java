@@ -15,7 +15,7 @@ import java.util.List;
 public class EventosDAO {
 
     private DatabaseGateway databaseGateway;
-    private final String SQL_LISTAR_TODOS = "SELECT evento._id, evento.nome, data, " +
+    private final String SQL_LISTAR_TODOS = "SELECT eventos._id, eventos.nome, data, " +
             "idlocal, local.nome, cidade, capacidade FROM " + EventosEntity.TABLE_NAME +
             " INNER JOIN " + LocalEntity.TABLE_NAME + " ON " + EventosEntity.COLUMN_NAME_ID_LOCAL +
             " = " + LocalEntity.TABLE_NAME + "." + LocalEntity._ID;
