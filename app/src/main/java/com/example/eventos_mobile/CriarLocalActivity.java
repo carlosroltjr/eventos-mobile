@@ -35,11 +35,13 @@ public class CriarLocalActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         if (intent != null && intent.getExtras() != null &&
-                intent.getExtras().get("categoriaEdicao") != null) {
+                intent.getExtras().get("localEdicao") != null) {
             Local local = (Local) intent.getExtras().get("localEdicao");
+
             editTextNome.setText(local.getNome());
             editTextCidade.setText(local.getCidade());
-            editTextCapacidade.setText(local.getCapacidade());
+            editTextCapacidade.setText(String.valueOf(local.getCapacidade()));
+            
             id = local.getId();
         }
     }
