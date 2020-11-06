@@ -1667,6 +1667,7 @@ id blocking
 id bottom
 id bounce
 id btn_eventos
+id btn_filtrar
 id btn_locais
 id btn_novoEvento
 id btn_novo_local
@@ -1734,6 +1735,7 @@ id easeOut
 id editTextNumber_capacidade_local
 id editText_cidade_local
 id editText_data
+id editText_filtro
 id editText_nome
 id editText_nome_local
 id edit_query
@@ -1933,6 +1935,7 @@ id textStart
 id textView_capacidade_local
 id textView_cidade_local
 id textView_data
+id textView_filtro
 id textView_local_evento
 id textView_nome
 id textView_nome_local

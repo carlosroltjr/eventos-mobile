@@ -7,10 +7,31 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textView_filtro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtro" />
+
+    <EditText
+        android:id="@+id/editText_filtro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Pesquise por evento/cidade"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btn_filtrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickFiltrar"
+        android:text="Filtrar" />
+
     <ListView
         android:id="@+id/listView_eventos"
         android:layout_width="match_parent"
-        android:layout_height="400dp">
+        android:layout_height="350dp">
 
     </ListView>
 

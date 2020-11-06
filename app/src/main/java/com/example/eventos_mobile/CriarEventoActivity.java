@@ -55,7 +55,7 @@ public class CriarEventoActivity extends AppCompatActivity {
 
             Evento evento = (Evento) intent.getExtras().get("eventoEdicao");
 
-            editTextNome.setText(evento.getNome());
+            editTextNome.setText(evento.getNomeEvento());
             editTextData.setText(String.valueOf(evento.getData()));
 
             int posicaoLocal = obterPosicaoLocal(evento.getLocal());

@@ -50,6 +50,6 @@ public class Local implements Serializable {
 
     @Override
     public String toString() {
-        return nome + " - " +  cidade + " - " + capacidade;
+        return this.getNome();
     }
 }

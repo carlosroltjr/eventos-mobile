@@ -7,13 +7,13 @@ import java.io.Serializable;
 public class Evento implements Serializable {
 
     private int id;
-    private String nome;
+    private String nomeEvento;
     private String data;
     private Local local;
 
-    public Evento(int id, String nome, String data, Local local) {
+    public Evento(int id, String nomeEvento, String data, Local local) {
         this.id = id;
-        this.nome = nome;
+        this.nomeEvento = nomeEvento;
         this.data = data;
         this.local = local;
     }
@@ -26,12 +26,12 @@ public class Evento implements Serializable {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeEvento() {
+        return nomeEvento;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeEvento(String nomeEvento) {
+        this.nomeEvento = nomeEvento;
     }
 
     public String getData() {
@@ -53,6 +53,9 @@ public class Evento implements Serializable {
     @NonNull
     @Override
     public String toString() {
-        return id + " - " + nome + " - " + data + " - " + local;
+        return "Evento: " + this.nomeEvento +
+                " \nData: " + this.data +
+                " \nLocal: " + this.getLocal().getNome() + " \nCidade: " + this.getLocal().getCidade() +
+                " \nCapacidade: " + this.getLocal().getCapacidade();
     }
 }

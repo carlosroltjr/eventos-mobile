@@ -1,6 +1,5 @@
 package com.example.eventos_mobile;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
@@ -10,18 +9,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.eventos_mobile.database.EventosDAO;
-import com.example.eventos_mobile.modelo.Evento;
 
-import java.util.ArrayList;
+import com.example.eventos_mobile.modelo.Evento;
 
 public class MainActivity extends AppCompatActivity {
 
+    private boolean ordem;
+    private EditText itemBusca;
+
     private ListView listViewEventos;
     private ArrayAdapter<Evento> adapterEventos;
+
     private  int id = 0;
 
     @Override
@@ -31,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         setTitle("Eventos");
 
         listViewEventos = findViewById(R.id.listView_eventos);
+
+        ordem = false;
 
         definirOnClickListenerListView();
         definirOnLongClickListenerListView();
@@ -43,6 +48,20 @@ public class MainActivity extends AppCompatActivity {
         adapterEventos = new ArrayAdapter<Evento>(MainActivity.this,
                 android.R.layout.simple_list_item_1, eventosDAO.listar());
 
+        listViewEventos.setAdapter(adapterEventos);
+
+//        buscar(this.ordem);
+    }
+
+    private void buscar(Boolean ordem){
+        itemBusca =  findViewById(R.id.editText_filtro);
+        String item = itemBusca.getText().toString();
+
+        EventosDAO eventosDAO = new EventosDAO(getBaseContext());
+
+        adapterEventos = new ArrayAdapter<Evento>(MainActivity.this,
+                android.R.layout.simple_list_item_1,
+                eventosDAO.filtrar(item, ordem));
         listViewEventos.setAdapter(adapterEventos);
     }
 
@@ -91,5 +110,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, ListarLocalActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    public void onClickFiltrar(View v){
+        buscar(this.ordem);
     }
 }
